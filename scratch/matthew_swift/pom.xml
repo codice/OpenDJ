@@ -6,7 +6,7 @@
         <artifactId>forgerock-parent</artifactId>
         <version>1.2.1</version>
     </parent>
-    <groupId>org.forgerock.opendj.scratch</groupId>
+    <groupId>org.codice.org.forgerock.opendj.scratch</groupId>
     <artifactId>scratch-matt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>

@@ -28,7 +28,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.forgerock.opendj</groupId>
+    <groupId>org.codice.org.forgerock.opendj</groupId>
     <artifactId>opendj-project</artifactId>
     <version>3.0.0-SNAPSHOT</version>
   </parent>
@@ -88,7 +88,7 @@
   <dependencies>
     <!-- ForgeRock libraries -->
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-rest2ldap-servlet</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -97,23 +97,23 @@
       <artifactId>i18n-slf4j</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-config</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-server</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-legacy</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-cli</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -174,7 +174,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-core</artifactId>
       <type>test-jar</type>
       <version>${project.version}</version>
@@ -339,7 +339,7 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>org.forgerock.opendj</groupId>
+                  <groupId>org.codice.org.forgerock.opendj</groupId>
                   <artifactId>opendj-maven-plugin</artifactId>
                   <version>${project.version}</version>
                   <type>jar</type>
@@ -466,7 +466,7 @@
       </plugin>
 
       <plugin>
-        <groupId>org.forgerock.opendj</groupId>
+        <groupId>org.codice.org.forgerock.opendj</groupId>
         <artifactId>opendj-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>
@@ -1187,7 +1187,7 @@
           <!-- Check svn:eol-style property on modified files -->
           <!-- TODO: Remove once Git migration over -->
           <plugin>
-            <groupId>org.forgerock.opendj</groupId>
+            <groupId>org.codice.org.forgerock.opendj</groupId>
             <artifactId>opendj-svn-property-check-maven-plugin</artifactId>
             <version>3.0.0-SNAPSHOT</version>
             <executions>
@@ -1530,7 +1530,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.forgerock.opendj</groupId>
+            <groupId>org.codice.org.forgerock.opendj</groupId>
             <artifactId>opendj-doc-maven-plugin</artifactId>
             <version>${project.version}</version>
             <executions>
@@ -1883,7 +1883,7 @@
           </plugin>
 
           <plugin>
-            <groupId>org.forgerock.opendj</groupId>
+            <groupId>org.codice.org.forgerock.opendj</groupId>
             <artifactId>opendj-doc-maven-plugin</artifactId>
             <version>${project.version}</version>
             <!--
@@ -1893,7 +1893,7 @@
             -->
             <dependencies>
               <dependency>
-                <groupId>org.forgerock.opendj</groupId>
+                <groupId>org.codice.org.forgerock.opendj</groupId>
                 <artifactId>opendj-config</artifactId>
                 <version>${project.version}</version>
               </dependency>
