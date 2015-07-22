@@ -28,7 +28,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>opendj-project</artifactId>
-    <groupId>org.forgerock.opendj</groupId>
+    <groupId>org.codice.org.forgerock.opendj</groupId>
     <version>2.5.0-SNAPSHOT</version>
   </parent>
   <artifactId>opendj-ldap-sync</artifactId>
@@ -40,13 +40,13 @@
   <packaging>jar</packaging>
   <dependencies>
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-ldap-sdk</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.forgerock.opendj</groupId>
+      <groupId>org.codice.org.forgerock.opendj</groupId>
       <artifactId>opendj-build-tools</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>

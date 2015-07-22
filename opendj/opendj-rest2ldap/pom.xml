@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>opendj-project</artifactId>
-        <groupId>org.forgerock.opendj</groupId>
+        <groupId>org.codice.org.forgerock.opendj</groupId>
         <version>3.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>opendj-rest2ldap</artifactId>
@@ -33,7 +33,7 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.forgerock.opendj</groupId>
+            <groupId>org.codice.org.forgerock.opendj</groupId>
             <artifactId>opendj-core</artifactId>
             <version>${project.version}</version>
         </dependency>
