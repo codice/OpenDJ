@@ -22,7 +22,7 @@
   ! CDDL HEADER END
   !
   !      Copyright 2011-2014 ForgeRock AS
-  !    
+  !
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -32,6 +32,7 @@
     <version>3.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>opendj-core</artifactId>
+  <version>3.0.0.ALPHA1</version>
   <name>OpenDJ Core APIs</name>
   <description>
     This module provides the core APIs required for implementing LDAP Directory
@@ -49,8 +50,9 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.forgerock.commons</groupId>
+      <groupId>org.codice.org.forgerock.commons</groupId>
       <artifactId>forgerock-util</artifactId>
+      <version>2.0.0.ALPHA1</version>
     </dependency>
     <dependency>
       <groupId>org.forgerock.commons</groupId>
@@ -208,4 +210,8 @@
       </plugin>
     </plugins>
   </reporting>
+
+  <scm>
+    <tag>3.0.0.ALPHA1</tag>
+  </scm>
 </project>
