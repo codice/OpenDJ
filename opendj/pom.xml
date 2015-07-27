@@ -29,11 +29,11 @@
   <parent>
     <groupId>org.forgerock</groupId>
     <artifactId>forgerock-parent</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
   </parent>
   <groupId>org.codice.org.forgerock.opendj</groupId>
   <artifactId>opendj-project</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
+  <version>3.0.0.ALPHA2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>OpenDJ Directory Services Project</name>
   <description>
@@ -82,20 +82,28 @@
       </notifier>
     </notifiers>
   </ciManagement>
-  <distributionManagement>
-    <site>
-      <id>forgerock.org</id>
-      <name>OpenDJ Community</name>
-      <url>${siteDistributionURL}</url>
-    </site>
-  </distributionManagement>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>${snapshots.repository.url}</url>
+        </snapshotRepository>
+        <repository>
+            <id>releases</id>
+            <url>${releases.repository.url}</url>
+        </repository>
+        <site>
+            <id>reports</id>
+            <url>${reports.repository.url}</url>
+        </site>
+    </distributionManagement>
+    <!-- Only are using 2 modules for DDF
   <modules>
     <module>opendj-maven-plugin</module>
     <module>opendj-copyright-maven-plugin</module>
     <module>opendj-svn-property-check-maven-plugin</module>
     <module>opendj-doc-maven-plugin</module>
-    <module>opendj-core</module>
-    <module>opendj-grizzly</module>
+
+
     <module>opendj-config</module>
     <module>opendj-cli</module>
     <module>opendj-ldap-toolkit</module>
@@ -107,6 +115,11 @@
     <module>opendj-legacy</module>
     <module>opendj-server-legacy</module>
   </modules>
+  -->
+    <modules>
+        <module>opendj-core</module>
+        <module>opendj-grizzly</module>
+    </modules>
   <properties>
     <mavenRepoSnapshots>http://maven.forgerock.org/repo/snapshots</mavenRepoSnapshots>
     <mavenRepoReleases>http://maven.forgerock.org/repo/releases</mavenRepoReleases>
@@ -356,6 +369,11 @@
     </plugins>
   </reporting>
   <repositories>
+      <repository>
+          <id>codice</id>
+          <name>Codice Repository</name>
+          <url>http://artifacts.codice.org/content/groups/public/</url>
+      </repository>
     <repository>
       <id>forgerock-staging-repository</id>
       <name>ForgeRock Release Repository</name>
@@ -408,7 +426,7 @@
         <version>${slf4jVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.forgerock.commons</groupId>
+        <groupId>org.codice.org.forgerock.commons</groupId>
         <artifactId>forgerock-util</artifactId>
         <version>2.0.0.ALPHA1</version>
       </dependency>
