@@ -33,7 +33,7 @@
   </parent>
   <groupId>org.codice.org.forgerock.opendj</groupId>
   <artifactId>opendj-project</artifactId>
-  <version>3.0.0.ALPHA2</version>
+  <version>3.0.0-ALPHA3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>OpenDJ Directory Services Project</name>
   <description>
@@ -67,7 +67,7 @@
     <url>https://github.com/codice/opendj/</url>
     <connection>scm:git:git://github.com/codice/opendj.git</connection>
     <developerConnection>scm:git:git://github.com/codice/opendj.git</developerConnection>
-    <tag>3.0.0.ALPHA2</tag>
+    <tag>HEAD</tag>
   </scm>
   <ciManagement>
     <system>jenkins</system>

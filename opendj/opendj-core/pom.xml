@@ -29,9 +29,10 @@
   <parent>
     <artifactId>opendj-project</artifactId>
     <groupId>org.codice.org.forgerock.opendj</groupId>
-    <version>3.0.0.ALPHA2</version>
+    <version>3.0.0-ALPHA3-SNAPSHOT</version>
   </parent>
   <artifactId>opendj-core</artifactId>
+  <version>3.0.0.ALPHA1</version>
   <name>OpenDJ Core APIs</name>
   <description>
     This module provides the core APIs required for implementing LDAP Directory
@@ -211,6 +212,6 @@
   </reporting>
 
   <scm>
-    <tag>3.0.0.ALPHA2</tag>
+    <tag>3.0.0.ALPHA1</tag>
   </scm>
 </project>
